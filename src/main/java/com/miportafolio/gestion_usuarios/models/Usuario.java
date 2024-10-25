@@ -1,5 +1,6 @@
 package com.miportafolio.gestion_usuarios.models;
 
+import jakarta.annotation.Nonnull;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -16,6 +17,8 @@ public class Usuario {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     private Long id;
+
+    @Nonnull
     private String name;
     private String email;
     private String phome;

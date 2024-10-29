@@ -21,6 +21,6 @@ public class Usuario {
     @Nonnull
     private String name;
     private String email;
-    private String phome;
+    private String phone;
     private String address;
 }
